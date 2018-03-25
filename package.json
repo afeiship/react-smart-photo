@@ -1,0 +1,93 @@
+{
+  "name": "react-smart-photo",
+  "version": "0.1.0",
+  "description": "The most easy to use responsive image viewer especially for mobile devices for react.",
+  "author": "afeiship <1290657123@qq.com>",
+  "keywords": [
+    "components",
+    "react-smart-photo",
+    "ui",
+    "theme"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/react-smart-photo.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/react-smart-photo/issues"
+  },
+  "homepage": "https://github.com/afeiship/react-smart-photo",
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
+    "docs": "node build/auto-readme.js"
+  },
+  "main": "./dist/react-smart-photo.js",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "autoprefixer-loader": "^3.2.0",
+    "babel": "^6.5.2",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.1.2",
+    "babel-register": "^6.0.0",
+    "copy-webpack-plugin": "^4.3.1",
+    "chai": "^3.5.0",
+    "chalk": "^1.1.3",
+    "codeclimate-test-reporter": "^0.3.1",
+    "connect-history-api-fallback": "^1.1.0",
+    "cross-spawn": "^4.0.2",
+    "css-loader": "^0.25.0",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "file-regexp": "github:afeiship/file-regexp",
+    "function-bind": "^1.0.2",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.8.1",
+    "http-proxy-middleware": "^0.17.2",
+    "inject-loader": "^2.0.1",
+    "isparta-loader": "^2.0.0",
+    "json-loader": "^0.5.4",
+    "lolex": "^1.4.0",
+    "node-sass": "^3.13.0",
+    "opn": "^4.0.2",
+    "ora": "^0.3.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "sass-loader": "^4.0.2",
+    "semver": "^5.3.0",
+    "shelljs": "^0.7.4",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.3",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-merge": "^0.14.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "noop": "github:afeiship/noop",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "smartphoto": "^1.2.4"
+  }
+}
