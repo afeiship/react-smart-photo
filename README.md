@@ -13,19 +13,81 @@
     caption: PropTypes.string,
     group: PropTypes.string,
     items: PropTypes.array,
+    smartOptions: PropTypes.object,
   };
 
   static defaultProps = {
-    items: []
+    items: [],
+    smartOptions: {
+      useHistoryApi: false
+    }
   };
   
 ```
 
-## usage:
-import ReactSmartPhoto from 'react-smart-photo';
-
+## install:
 ```jsx
-BACKUP_USAGE
+import ReactSmartPhoto from 'react-smart-photo';
+```
+
+## usage:
+```jsx
+
+// install: npm install afeiship/react-smart-photo --save
+// import : import ReactSmartPhoto from 'react-smart-photo'
+
+class App extends React.Component{
+  state = {
+
+  };
+
+  constructor(props){
+    super(props);
+    window.demo = this;
+    window.refs = this.refs;
+    window.rc = this.refs.rc;
+  }
+
+  render(){
+    return (
+      <div className="hello-react-smart-photo">
+        <ReactSmartPhoto ref='rc' group='a' items={[
+          {
+            href:'http://placeholder.qiniudn.com/180x180',
+            src:'http://placeholder.qiniudn.com/80x80',
+            id: '80'
+          }
+        ]} />
+
+        <hr/>
+
+        <ReactSmartPhoto ref='rc' group='0' items={[
+          {
+            href:'http://placeholder.qiniudn.com/180x180',
+            src:'http://placeholder.qiniudn.com/80x80',
+            id: '80'
+          },
+          {
+            href:'http://placeholder.qiniudn.com/180x180',
+            src:'http://placeholder.qiniudn.com/80x80',
+            id: '80'
+          },
+          {
+            href:'http://placeholder.qiniudn.com/180x180',
+            src:'http://placeholder.qiniudn.com/80x80',
+            id: '80'
+          },
+          {
+            href:'http://placeholder.qiniudn.com/180x180',
+            src:'http://placeholder.qiniudn.com/80x80',
+            id: '80'
+          }
+        ]} />
+      </div>
+    );
+  }
+}
+
 ```
 
 ## customize style:

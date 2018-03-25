@@ -16,16 +16,20 @@ export default class extends Component{
     caption: PropTypes.string,
     group: PropTypes.string,
     items: PropTypes.array,
+    smartOptions: PropTypes.object,
   };
 
   static defaultProps = {
-    items: []
+    items: [],
+    smartOptions: {
+      useHistoryApi: false
+    }
   };
   /*===properties end===*/
 
   componentDidMount() {
-    const { group } = this.props;
-    this._instance = new SmartPhoto(`.react-smart-photo-item[data-group="${group}"]`);
+    const { group, smartOptions } = this.props;
+    this._instance = new SmartPhoto(`.react-smart-photo-item[data-group="${group}"]`, smartOptions);
   }
 
   componentWillUnmount(){
@@ -37,6 +41,7 @@ export default class extends Component{
       className,
       group,
       items,
+      smartOptions,
       ...props
     } = this.props;
     return (

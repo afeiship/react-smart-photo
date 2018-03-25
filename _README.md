@@ -7,9 +7,12 @@
 BACKUP_PROPERTIES
 ```
 
-## usage:
+## install:
+```jsx
 import ReactSmartPhoto from 'react-smart-photo';
+```
 
+## usage:
 ```jsx
 BACKUP_USAGE
 ```
