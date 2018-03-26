@@ -10,10 +10,6 @@ export default class ReatSmartPhoto extends Component{
   /*===properties start===*/
   static propTypes = {
     className: PropTypes.string,
-    href: PropTypes.string,
-    src: PropTypes.string,
-    id: PropTypes.string,
-    caption: PropTypes.string,
     group: PropTypes.string,
     items: PropTypes.array,
     smartOptions: PropTypes.object,
