@@ -6,7 +6,7 @@ import noop from 'noop';
 import objectAssign from 'object-assign';
 import SmartPhoto from 'smartphoto';
 
-export default class extends Component{
+export default class ReatSmartPhoto extends Component{
   /*===properties start===*/
   static propTypes = {
     className: PropTypes.string,
@@ -27,9 +27,15 @@ export default class extends Component{
   };
   /*===properties end===*/
 
+  static selectorMap = {};
+
   componentDidMount() {
     const { group, smartOptions } = this.props;
-    this._instance = new SmartPhoto(`.react-smart-photo-item[data-group="${group}"]`, smartOptions);
+    const selector = `.react-smart-photo-item[data-group="${group}"]`;
+    const _instance = ReatSmartPhoto.selectorMap[selector];
+    ReatSmartPhoto.selectorMap[selector] = !_instance
+      ? new SmartPhoto(`.react-smart-photo-item[data-group="${group}"]`, smartOptions)
+      : _instance;
   }
 
   componentWillUnmount(){
