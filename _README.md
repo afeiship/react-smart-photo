@@ -7,7 +7,10 @@
 BACKUP_PROPERTIES
 ```
 
-## install:
+## install && import:
+```bash
+npm install --save afeiship/react-smart-photo --registry=https://registry.npm.taobao.org
+```
 ```jsx
 import ReactSmartPhoto from 'react-smart-photo';
 ```
