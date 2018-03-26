@@ -27,13 +27,13 @@ export default class ReatSmartPhoto extends Component{
   };
   /*===properties end===*/
 
-  static selectorMap = {};
+  static instanceMap = {};
 
   componentDidMount() {
     const { group, smartOptions } = this.props;
     const selector = `.react-smart-photo-item[data-group="${group}"]`;
-    const _instance = ReatSmartPhoto.selectorMap[selector];
-    ReatSmartPhoto.selectorMap[selector] = !_instance
+    const _instance = ReatSmartPhoto.instanceMap[selector];
+    ReatSmartPhoto.instanceMap[selector] = !_instance
       ? new SmartPhoto(`.react-smart-photo-item[data-group="${group}"]`, smartOptions)
       : _instance;
   }
