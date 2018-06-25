@@ -64,6 +64,8 @@
     "node-sass": "^3.13.0",
     "opn": "^4.0.2",
     "ora": "^0.3.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "sass-loader": "^4.0.2",
     "semver": "^5.3.0",
@@ -86,8 +88,6 @@
     "noop": "github:afeiship/noop",
     "object-assign": "^4.1.1",
     "prop-types": "^15.5.10",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
     "smartphoto": "^1.2.4"
   }
 }
