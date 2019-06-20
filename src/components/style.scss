@@ -9,4 +9,6 @@ $header-color: rgba(0, 0, 0, .2);
 @import 'node_modules/smartphoto/scss/smartphoto.scss';
 
 .react-smart-photo{
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }

@@ -29,11 +29,13 @@ export default class ReatSmartPhoto extends Component {
 
   componentDidMount() {
     const { group, smartOptions } = this.props;
-    const selector = `.${CLASS_NAME}-item[data-group="${group}"]`;
+    const selector = `.${CLASS_NAME}__item[data-group="${group}"]`;
     const _instance = ReatSmartPhoto.instanceMap[selector];
     ReatSmartPhoto.instanceMap[selector] = !_instance
       ? new SmartPhoto(selector, smartOptions)
       : _instance;
+
+    window.sss = this;
   }
 
   componentWillUnmount() {
@@ -42,6 +44,9 @@ export default class ReatSmartPhoto extends Component {
 
   render() {
     const { className, group, items, smartOptions, ...props } = this.props;
+
+    console.log('group', group);
+
     return (
       <section className={classNames(CLASS_NAME, className)} {...props}>
         {items.map((item, index) => {

@@ -18,11 +18,11 @@ class App extends React.Component {
       <div className="hello-react-smart-photo">
         <ReactSmartPhoto
           ref="rc"
-          group="a"
+          group="g1"
           items={[
             {
-              href: 'http://avatar.chsword.net/avatar/1',
-              src: 'http://avatar.chsword.net/avatar/1',
+              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
               id: '80'
             }
           ]}
@@ -32,26 +32,26 @@ class App extends React.Component {
 
         <ReactSmartPhoto
           ref="rc"
-          group="0"
+          group="g2"
           items={[
             {
-              href: 'http://avatar.chsword.net/avatar/1',
-              src: 'http://avatar.chsword.net/avatar/1',
+              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
               id: '80'
             },
             {
-              href: 'http://avatar.chsword.net/avatar/1',
-              src: 'http://avatar.chsword.net/avatar/1',
+              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
               id: '80'
             },
             {
-              href: 'http://avatar.chsword.net/avatar/1',
-              src: 'http://avatar.chsword.net/avatar/1',
+              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
               id: '80'
             },
             {
-              href: 'http://avatar.chsword.net/avatar/1',
-              src: 'http://avatar.chsword.net/avatar/1',
+              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
               id: '80'
             }
           ]}
