@@ -1,2 +1,2 @@
-import ReactSmartPhoto from 'components/react-smart-photo';
+import ReactSmartPhoto from './components';
 export default ReactSmartPhoto;
