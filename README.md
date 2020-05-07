@@ -12,13 +12,12 @@ npm update @feizheng/react-smart-photo
 ```
 
 ## properties
-| Name                                   | Type   | Required | Default | Description                           |
-| -------------------------------------- | ------ | -------- | ------- | ------------------------------------- |
-| className                              | string | false    | -       | The extended className for component. |
-| name                                   | string | false    | -       | The group name.                       |
-| items                                  | array  | false    | []      | Image source set.                     |
-| options                                | object | false    | -       | SmartPhoto options.                   |
-| https://github.com/appleple/SmartPhoto |
+| Name      | Type   | Required | Default | Description                                                     |
+| --------- | ------ | -------- | ------- | --------------------------------------------------------------- |
+| className | string | false    | -       | The extended className for component.                           |
+| name      | string | false    | -       | The group name.                                                 |
+| items     | array  | false    | []      | Image source set.                                               |
+| options   | object | false    | -       | SmartPhoto options. see: https://github.com/appleple/SmartPhoto |
 
 
 ## usage

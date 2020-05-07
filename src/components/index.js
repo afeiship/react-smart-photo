@@ -25,8 +25,7 @@ export default class ReactSmartPhoto extends Component {
      */
     items: PropTypes.array,
     /**
-     * SmartPhoto options.
-     * https://github.com/appleple/SmartPhoto
+     * SmartPhoto options. see: https://github.com/appleple/SmartPhoto
      */
     options: PropTypes.object
   };
