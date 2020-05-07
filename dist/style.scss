@@ -1,12 +1,4 @@
-$react-smart-photo-options:(
-)!default;
-
-$animation-speed: .3s;
-$animation-function: ease-out;
-$backdrop-color: rgba(0, 0, 0, 1);
-$header-color: rgba(0, 0, 0, .2);
-
-@import 'node_modules/smartphoto/scss/smartphoto.scss';
+$react-smart-photo-options: () !default;
 
 .react-smart-photo{
   -webkit-touch-callout: none;

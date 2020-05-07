@@ -1,3 +1,4 @@
 export default (inEnv) => {
-  return require(`./build/${inEnv.type}`).default;
+  const { NODE_ENV } = process.env;
+  return require(`./build/${NODE_ENV}`).default;
 };

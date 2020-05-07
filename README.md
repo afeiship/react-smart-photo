@@ -1,106 +1,95 @@
 # react-smart-photo
 > The most easy to use responsive image viewer especially for mobile devices for react.
 
+## installation
+```shell
+npm install -S @feizheng/react-smart-photo
+```
 
-## properties:
-```javascript
+## update
+```shell
+npm update @feizheng/react-smart-photo
+```
 
-  static propTypes = {
-    className: PropTypes.string,
-    group: PropTypes.string,
-    items: PropTypes.array,
-    smartOptions: PropTypes.object,
-  };
+## properties
+| Name                                   | Type   | Required | Default | Description                           |
+| -------------------------------------- | ------ | -------- | ------- | ------------------------------------- |
+| className                              | string | false    | -       | The extended className for component. |
+| name                                   | string | false    | -       | The group name.                       |
+| items                                  | array  | false    | []      | Image source set.                     |
+| options                                | object | false    | -       | SmartPhoto options.                   |
+| https://github.com/appleple/SmartPhoto |
 
-  static defaultProps = {
-    items: [],
-    smartOptions: {
-      useHistoryApi: false
+
+## usage
+1. import css
+  ```scss
+  @import "~@feizheng/react-smart-photo/dist/style.scss";
+  @import "~smartphoto/scss/smartphoto.scss";
+
+  // customize your styles:
+  $react-smart-photo-options: ()
+  ```
+2. import js
+  ```js
+  import ReactSmartPhoto from '@feizheng/react-smart-photo';
+  import ReactDOM from 'react-dom';
+  import React from 'react';
+  import './assets/style.scss';
+
+  class App extends React.Component {
+    render() {
+      return (
+        <div className="app-container">
+          <ReactSmartPhoto
+            name="g1"
+            items={[
+              {
+                href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                id: '80'
+              }
+            ]}
+          />
+
+          <hr />
+
+          <ReactSmartPhoto
+            name="g2"
+            items={[
+              {
+                href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                id: '80'
+              },
+              {
+                href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                id: '80'
+              },
+              {
+                href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                id: '80'
+              },
+              {
+                href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+                id: '80'
+              }
+            ]}
+          />
+        </div>
+      );
     }
-  };
-  
-```
-
-## install && import:
-```bash
-npm install --save afeiship/react-smart-photo --registry=https://registry.npm.taobao.org
-```
-```jsx
-import ReactSmartPhoto from 'react-smart-photo';
-```
-
-## usage:
-```jsx
-
-// install: npm install afeiship/react-smart-photo --save
-// import : import ReactSmartPhoto from 'react-smart-photo'
-
-class App extends React.Component{
-  state = {
-
-  };
-
-  constructor(props){
-    super(props);
-    window.demo = this;
-    window.refs = this.refs;
-    window.rc = this.refs.rc;
   }
 
-  render(){
-    return (
-      <div className="hello-react-smart-photo">
-        <ReactSmartPhoto ref='rc' group='a' items={[
-          {
-            href:'http://placeholder.qiniudn.com/180x180',
-            src:'http://placeholder.qiniudn.com/80x80',
-            id: '80'
-          }
-        ]} />
+  ReactDOM.render(<App />, document.getElementById('app'));
 
-        <hr/>
+  ```
 
-        <ReactSmartPhoto ref='rc' group='0' items={[
-          {
-            href:'http://placeholder.qiniudn.com/180x180',
-            src:'http://placeholder.qiniudn.com/80x80',
-            id: '80'
-          },
-          {
-            href:'http://placeholder.qiniudn.com/180x180',
-            src:'http://placeholder.qiniudn.com/80x80',
-            id: '80'
-          },
-          {
-            href:'http://placeholder.qiniudn.com/180x180',
-            src:'http://placeholder.qiniudn.com/80x80',
-            id: '80'
-          },
-          {
-            href:'http://placeholder.qiniudn.com/180x180',
-            src:'http://placeholder.qiniudn.com/80x80',
-            id: '80'
-          }
-        ]} />
-      </div>
-    );
-  }
-}
+## documentation
+- https://afeiship.github.io/react-smart-photo/
 
-```
-
-## customize style:
-```scss
-// customize your styles:
-$react-smart-photo-options:(
-);
-
-@import 'node_modules/react-smart-photo/dist/style.scss';
-```
-
-## resources:
-+ https://github.com/appleple/SmartPhoto
-
-
-## todos:
-- [ ] events
+## resources
+- https://github.com/appleple/SmartPhoto

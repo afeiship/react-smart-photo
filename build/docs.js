@@ -1,6 +1,12 @@
-import baseConfig from '.';
+import baseConfig from './base';
 import merge from 'webpack-merge';
-import { configs, inputs, outputs, loaders, plugins } from 'webpack-lib-kits';
+import {
+  configs,
+  inputs,
+  outputs,
+  loaders,
+  plugins
+} from '@feizheng/webpack-lib-kits';
 
 export default merge(baseConfig, {
   entry: inputs.docs(),

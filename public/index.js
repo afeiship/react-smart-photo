@@ -4,21 +4,11 @@ import React from 'react';
 import './assets/style.scss';
 
 class App extends React.Component {
-  state = {};
-
-  constructor(props) {
-    super(props);
-    window.demo = this;
-    window.refs = this.refs;
-    window.rc = this.refs.rc;
-  }
-
   render() {
     return (
-      <div className="hello-react-smart-photo">
+      <div className="app-container">
         <ReactSmartPhoto
-          ref="rc"
-          group="g1"
+          name="g1"
           items={[
             {
               href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
@@ -31,8 +21,7 @@ class App extends React.Component {
         <hr />
 
         <ReactSmartPhoto
-          ref="rc"
-          group="g2"
+          name="g2"
           items={[
             {
               href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
@@ -60,4 +49,5 @@ class App extends React.Component {
     );
   }
 }
+
 ReactDOM.render(<App />, document.getElementById('app'));

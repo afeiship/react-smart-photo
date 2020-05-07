@@ -9,10 +9,12 @@ body,
   height: 100%;
 }
 
-@import "@/components/style.scss";
+@import "~@/components/style.scss";
+@import "~smartphoto/scss/smartphoto.scss";
 
 .app-container {
   padding: 50px;
+  box-sizing: border-box;
   .button {
     background: #3cc51f;
     width: 100%;
