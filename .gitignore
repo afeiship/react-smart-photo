@@ -7,5 +7,8 @@ Gemfile.lock
 yarn-error.log
 package-lock.json
 .DS_Store
+
+# editor
 .idea
 .vscode
+.history

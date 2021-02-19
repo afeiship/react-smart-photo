@@ -1,9 +1,9 @@
-const rmp = require('@feizheng/react-markdown-props');
+const rmp = require('@jswork/react-markdown-props');
 const fs = require('fs');
 const indentString = require('indent-string');
 
-require('@feizheng/next-js-core2');
-require('@feizheng/next-replace-in-file');
+require('@jswork/next');
+require('@jswork/next-replace-in-file');
 
 nx.declare({
   statics: {
@@ -23,7 +23,7 @@ nx.declare({
       nx.replaceInFile('README.md', [
         ['__GENERATE_DOCS__', rmp('./src/components/index.js')],
         ['__GENERATE_DAPP__', indentString(docApp, 2)],
-        ['../src/main', '@feizheng/react-smart-photo']
+        ['../src/main', '@jswork/react-smart-photo']
       ]);
     }
   }

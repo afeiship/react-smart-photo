@@ -1,36 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-html,
-body,
-#app,
-.app-container {
-  height: 100%;
-}
+@import "@/components/style.scss";
+@import "~@jswork/react-github-corner/dist/style.scss";
+@import "~@jswork/react-sw-update-tips/dist/style.scss";
+@import "~@jswork/react-demokit/dist/style.scss";
 
-@import "~@/components/style.scss";
 @import "~smartphoto/scss/smartphoto.scss";
 
 .app-container {
-  padding: 50px;
-  box-sizing: border-box;
-  .button {
-    background: #3cc51f;
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    color: #fff;
+  .is-body {
     padding: 20px;
-    border: none;
+    background: #fff;
+  }
 
-    &:active {
-      background: darken(#3cc51f, 10%);
-    }
-
-    &:focus {
-      outline: none;
+  .react-smart-photo {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    img {
+      margin-right: 5px;
+      border:1px solid #ccc;
+      padding: 2px;
     }
   }
 }

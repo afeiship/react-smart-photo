@@ -6,6 +6,7 @@
   "jsxBracketSameLine": true,
   "tabWidth": 2,
   "semi": true,
+  "quoteProps": "consistent",
   "singleQuote": true,
   "overrides": [
     {

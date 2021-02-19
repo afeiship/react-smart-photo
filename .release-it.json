@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "after:init": [
+      "t2k"
+    ],
+    "after:bump": [
+      "npm run docs",
+      "npm run build"
+    ]
+  },
+  "github": {
+    "release": true
+  }
+}

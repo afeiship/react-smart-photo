@@ -1,15 +1,23 @@
-import baseConfig from './base';
-import merge from 'webpack-merge';
 import {
-  configs,
   inputs,
   outputs,
-  loaders,
+
   plugins
-} from '@feizheng/webpack-lib-kits';
+} from '@jswork/webpack-lib-kits';
+import OfflinePlugin from 'offline-plugin';
+import merge from 'webpack-merge';
+import baseConfig from './base';
 
 export default merge(baseConfig, {
   entry: inputs.docs(),
   output: outputs.docs(),
-  plugins: [plugins.clean(), plugins.html()]
+  plugins: [
+    plugins.clean(),
+    plugins.html(),
+    new OfflinePlugin({
+      ServiceWorker: {
+        events: true
+      }
+    })
+  ]
 });

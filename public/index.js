@@ -1,18 +1,35 @@
-import ReactSmartPhoto from '../src/main';
-import ReactDOM from 'react-dom';
+import ReactDemokit from '@jswork/react-demokit';
 import React from 'react';
+import ReactDOM from 'react-dom';
+import ReactSmartPhoto from '../src/main';
+import NxRandomAvatar from '@jswork/next-random-avatar';
 import './assets/style.scss';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: NxRandomAvatar.women(5).map((item) => {
+        return {
+          id: '80',
+          href: item,
+          src: item
+        };
+      })
+    };
+  }
   render() {
+    const { items } = this.state;
     return (
-      <div className="app-container">
+      <ReactDemokit
+        className="p-3 app-container"
+        url="https://github.com/afeiship/react-smart-photo">
         <ReactSmartPhoto
           name="g1"
           items={[
             {
-              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
+              href: NxRandomAvatar.lego(),
+              src: NxRandomAvatar.lego(),
               id: '80'
             }
           ]}
@@ -20,32 +37,8 @@ class App extends React.Component {
 
         <hr />
 
-        <ReactSmartPhoto
-          name="g2"
-          items={[
-            {
-              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              id: '80'
-            },
-            {
-              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              id: '80'
-            },
-            {
-              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              id: '80'
-            },
-            {
-              href: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              src: 'http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg',
-              id: '80'
-            }
-          ]}
-        />
-      </div>
+        <ReactSmartPhoto name="g2" items={items} />
+      </ReactDemokit>
     );
   }
 }
